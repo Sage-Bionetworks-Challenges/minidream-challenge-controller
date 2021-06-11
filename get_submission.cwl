@@ -14,7 +14,7 @@ inputs:
   - id: synapse_config
     type: File
   - id: submission_id
-    type: string
+    type: int
 
 arguments:
   - valueFrom: get_submission.py
