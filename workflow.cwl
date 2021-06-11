@@ -81,7 +81,5 @@ steps:
         default: true
       - id: synapse_config
         source: "#synapseConfig"
-      - id: previous_annotation_finished
-        source: "#annotate_validation_with_output/finished"
     out: [finished]
  
