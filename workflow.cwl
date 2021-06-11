@@ -32,19 +32,14 @@ outputs: []
 steps:
 
   download_submission:
-    run: https://raw.githubusercontent.com/Sage-Bionetworks/ChallengeWorkflowTemplates/v3.1/cwl/get_submission.cwl
+    run: get_submission.cwl
     in:
-      - id: submissionid
+      - id: submission_id
         source: "#submissionId"
       - id: synapse_config
         source: "#synapseConfig"
     out:
       - id: filepath
-      - id: docker_repository
-      - id: docker_digest
-      - id: entity_id
-      - id: entity_type
-      - id: results
 
   score:
     run: score.cwl
